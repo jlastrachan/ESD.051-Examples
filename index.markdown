@@ -115,7 +115,7 @@ and present that to the user so they knew which route to take.
    the lxml library to load it as a python object, and the html soup parser to fix any
    issues understanding the html and still retrieve acceptable, well structured xml.
 
-[e1]: static/Transaction_page_web.pdf
+[e1]: static/Transaction_pages_web.pdf
 [e2]: weather_py.html
 [e3]: 9000.html
 [e4]: 9100.html
