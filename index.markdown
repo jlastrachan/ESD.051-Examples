@@ -1,9 +1,9 @@
 --- 
 layout: default
-title: Examples of Supporting Angel.com transaction pages, for ESD.051
+title: Examples of Supporting Angel.com transaction pages, for ESD.051 Spring 2011
 ---
 
-# Examples of Supporting [Angel.com][angel] transaction pages, for [EDS.051][esd.051]
+# Examples of Supporting [Angel.com][angel] transaction pages, for [EDS.051 Spring 2011][esd.051]
 [angel]: http://www.angel.com       "Angel.com"
 [esd.051]: https://stellar.mit.edu/S/course/ESD/sp11/ESD.051/index.html     "MIT ESD.051"
 
@@ -11,6 +11,9 @@ title: Examples of Supporting Angel.com transaction pages, for ESD.051
 [nm]: https://github.com/nearlymonolith
 [eq]: mailto:eid-questions@mit.edu
 
+#### See [github repsitory][git]: to browse files, or even [download them.][dl]
+[git]: https://github.com/nearlymonolith/ESD.051-Examples
+[dl]: https://github.com/nearlymonolith/ESD.051-Examples/archives/master
 
 As explained in class, Angel is a wonderful platform for creating voice applications, but
 trades of extensibility and flexibility in exchange for ease of use by a non-technical

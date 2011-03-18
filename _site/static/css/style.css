@@ -168,12 +168,64 @@ a:hover { color: #036; }
  * Author: 
  */
 
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  
+  /* Use body as wrapper: camendesign.com/code/developpeurs_sans_frontieres */
+  /*width: 800px;*/
+  margin: 40px;
+}
 
+h1 { 
+  font-size: 220%; 
+  line-height: 1.25em;
+}
 
+h2 { 
+  font-size: 160%;
+  line-height: 1.20em;
+}
 
+h3 {
+  font-size: 130%;
+  line-height: 1.10em;
+}
 
+p {
+  margin: 12px 0 12px 0;
+}
 
+blockquote {
+  margin: 24px 0 24px 24px;
+  color: #999;
+  font-style: italic;
+  border-left: 2px solid #EEE;
+  padding-left: 1em; 
+}
 
+code {
+  font-size: 90%;
+  font-family: Monaco, Consolas, monospace;
+}
+
+pre {
+  background-color: #F8F8F8;
+  border: 1px solid #EEE;
+  color: #000;
+  display: block;
+  line-height: 150%;
+  overflow: auto;
+  padding: 1em;
+  margin: 24px 0 24px 0;
+}
+
+hr {
+  border: 0;
+  height: 3px;
+  background-color: #ddd;
+}
 
 
 
