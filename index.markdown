@@ -11,7 +11,7 @@ title: Examples of Supporting Angel.com transaction pages, for ESD.051 Spring 20
 [nm]: https://github.com/nearlymonolith
 [eq]: mailto:eid-questions@mit.edu
 
-#### See [github repsitory][git] to browse files, or even [download them.][dl]
+#### See [github repository][git] to browse files, or even [download them.][dl]
 [git]: https://github.com/nearlymonolith/ESD.051-Examples
 [dl]: https://github.com/nearlymonolith/ESD.051-Examples/archives/master
 
