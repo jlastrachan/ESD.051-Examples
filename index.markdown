@@ -11,12 +11,12 @@ title: Examples of Supporting Angel.com transaction pages, for ESD.051 Spring 20
 [nm]: https://github.com/nearlymonolith
 [eq]: mailto:eid-questions@mit.edu
 
-#### See [github repsitory][git]: to browse files, or even [download them.][dl]
+#### See [github repsitory][git] to browse files, or even [download them.][dl]
 [git]: https://github.com/nearlymonolith/ESD.051-Examples
 [dl]: https://github.com/nearlymonolith/ESD.051-Examples/archives/master
 
 As explained in class, Angel is a wonderful platform for creating voice applications, but
-trades of extensibility and flexibility in exchange for ease of use by a non-technical
+trades off extensibility and flexibility in exchange for ease of use by a non-technical
 user. Luckily, it also contains the ability to create transaction pages, which open
 up the option to interface with any application, provided you can do so via a URL.
 
