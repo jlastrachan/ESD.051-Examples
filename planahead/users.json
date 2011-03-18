@@ -1,0 +1,14 @@
+[
+{
+    "_id" : "2012475876",
+    "name" : "Anthony",
+    "addresses" : ["home", "work", "girlfriend"],
+    "trips" : [ 
+        { 
+            "source" : "girlfriend",
+            "destination" : "home",
+            "map" : "http://goo.gl/maps/ieAc"
+        }
+    ]
+}
+]
