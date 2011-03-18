@@ -69,9 +69,9 @@ All python files have comments and explanations in the file. These should suffic
 make the code readable and understand how to accomplish certain objectives, although
 the explanations assume a good working knowledge of and familiarity with python.
 
- - `Transaction_pages_web.pdf`: The presentation from class, just for reference.
+ - [`Transaction_pages_web.pdf`][e1]: The presentation from class, just for reference.
 
- - `weather.py`: The example from class (and the presentation). Includes retrieving
+ - [`weather.py`][e2]: The example from class (and the presentation). Includes retrieving
    variables from a transaction page, querying the Google weather API for information,
    parsing XML for data, and creating a TTS prompt for Angel to read
 
@@ -80,20 +80,20 @@ store addresses and various routes between them, and then would query Google for
 traffic data and projected travel time between a particular source and destination,
 and present that to the user so they knew which route to take.
 
- - `planahead/9000_GetPreliminaryInfo.py`: The purpose of this module is to accept caller id 
+ - [`planahead/9000_GetPreliminaryInfo.py`][e3]: The purpose of this module is to accept caller id 
    from angel and then hit the database (actually stubbed off and represented by a python 
    dictionary) to see if they're a registered user. If not, it assigned them 1111111111 as 
    a number, which is the corresponding id for the demo account in the database. That way, 
    they can demo the application without being registered.
 
- - `planahead/9100_GetSource.py`: This module dynamically creates an AngelXML question page to ask 
+ - [`planahead/9100_GetSource.py`][e4]: This module dynamically creates an AngelXML question page to ask 
    the user for their source address. It's dynamic because we have to create the list of
    accepted responses based on the names of addresses they've saved in the stubbed database.
 
- - `planahead/9200_GetDestination.py`: Gets the user's desired destination address, similar
+ - [`planahead/9200_GetDestination.py`][e5]: Gets the user's desired destination address, similar
    to 9100.
 
- - `planahead/9300_GetRouteInfo.py`: This is the main logical page in the application. It 
+ - [`planahead/9300_GetRouteInfo.py`][e6]: This is the main logical page in the application. It 
    accepts a source and destination address and queries the database to retrieve any google 
    maps urls corresponding to routes between the two.  It then scrapes the page for the 
    current traffic information, and finds the projected route time either with or without
@@ -104,16 +104,25 @@ and present that to the user so they knew which route to take.
    will retrieve the next few fastest routes from Google to try and still give them information
    about alternate possibilities.
 
- - `planahead/getUser.py`: This module is rather boring. We're simulating a nosql database 
+ - [`planahead/getUser.py`][e7]: This module is rather boring. We're simulating a nosql database 
    using a dictionary.  This is a good example of stubbing, though, since we put this in 
    an external module in comparison to all the modules that require user info. This means 
    that conceivably,if we were to connect this to an actual database, the rest of our code 
    would remain (largely) unchanged. Go Modular Design!
 
- - `planahead/parseMap.py`: This module is an example of parsing xml to find pertinent 
+ - [`planahead/parseMap.py`][e8]: This module is an example of parsing xml to find pertinent 
    information. In this case, the xml is actually the html of a google maps page. We use 
    the lxml library to load it as a python object, and the html soup parser to fix any
    issues understanding the html and still retrieve acceptable, well structured xml.
+
+[e1]: static/Transaction_page_web.pdf
+[e2]: weather_py.html
+[e3]: 9000.html
+[e4]: 9100.html
+[e5]: 9200.html
+[e6]: 9300.html
+[e7]: getuser.html
+[e8]: parseMap.html
 
 ### Helpful Python Libraries
 

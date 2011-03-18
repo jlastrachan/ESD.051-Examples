@@ -1,10 +1,10 @@
 --- 
-layout: default 
-title: weather
+layout: example 
+title: weather.py
+description: The example from class (and the presentation). Includes retrieving variables from a transaction page, querying the Google weather API for information, parsing XML for data, and creating a TTS prompt for Angel to read.
 ---
 
 {% highlight python %}
-<code>
 #!/usr/bin/python
 import urllib2
 from lxml import etree as ET
@@ -29,5 +29,4 @@ print
 inputs = cgi.FieldStorage()
 z = inputs['zipcode'].value
 print toAngel(z)
-</code>
 {% endhighlight %}

@@ -13,6 +13,7 @@
 
   <title></title>
   <meta name="description" content="">
+  <meta name="title" content="Examples of Supporting Angel.com transaction pages, for ESD.051 Spring 2011">
   <meta name="author" content="Anthony Morelli">
 
   <!-- Mobile viewport optimized: j.mp/bplateviewport -->
@@ -21,6 +22,7 @@
 
   <!-- CSS: implied media="all" -->
   <link rel="stylesheet" href="static/css/style.css?v=1">
+  <link rel="stylesheet" href="static/css/syntax.css?v=1">
 
   <!-- Uncomment if you are specifically targeting less enabled mobile browsers
   <link rel="stylesheet" media="handheld" href="css/handheld.css?v=2">  -->
@@ -73,11 +75,11 @@
 
 <ul>
 <li>
-<p><code>Transaction_pages_web.pdf</code>: The presentation from class, just for reference.</p>
+<p><a href='static/Transaction_page_web.pdf'><code>Transaction_pages_web.pdf</code></a>: The presentation from class, just for reference.</p>
 </li>
 
 <li>
-<p><code>weather.py</code>: The example from class (and the presentation). Includes retrieving variables from a transaction page, querying the Google weather API for information, parsing XML for data, and creating a TTS prompt for Angel to read</p>
+<p><a href='weather_py.html'><code>weather.py</code></a>: The example from class (and the presentation). Includes retrieving variables from a transaction page, querying the Google weather API for information, parsing XML for data, and creating a TTS prompt for Angel to read</p>
 </li>
 </ul>
 
@@ -85,27 +87,27 @@
 
 <ul>
 <li>
-<p><code>planahead/9000_GetPreliminaryInfo.py</code>: The purpose of this module is to accept caller id from angel and then hit the database (actually stubbed off and represented by a python dictionary) to see if they&#8217;re a registered user. If not, it assigned them 1111111111 as a number, which is the corresponding id for the demo account in the database. That way, they can demo the application without being registered.</p>
+<p><a href='9000.html'><code>planahead/9000_GetPreliminaryInfo.py</code></a>: The purpose of this module is to accept caller id from angel and then hit the database (actually stubbed off and represented by a python dictionary) to see if they&#8217;re a registered user. If not, it assigned them 1111111111 as a number, which is the corresponding id for the demo account in the database. That way, they can demo the application without being registered.</p>
 </li>
 
 <li>
-<p><code>planahead/9100_GetSource.py</code>: This module dynamically creates an AngelXML question page to ask the user for their source address. It&#8217;s dynamic because we have to create the list of accepted responses based on the names of addresses they&#8217;ve saved in the stubbed database.</p>
+<p><a href='9100.html'><code>planahead/9100_GetSource.py</code></a>: This module dynamically creates an AngelXML question page to ask the user for their source address. It&#8217;s dynamic because we have to create the list of accepted responses based on the names of addresses they&#8217;ve saved in the stubbed database.</p>
 </li>
 
 <li>
-<p><code>planahead/9200_GetDestination.py</code>: Gets the user&#8217;s desired destination address, similar to 9100.</p>
+<p><a href='9200.html'><code>planahead/9200_GetDestination.py</code></a>: Gets the user&#8217;s desired destination address, similar to 9100.</p>
 </li>
 
 <li>
-<p><code>planahead/9300_GetRouteInfo.py</code>: This is the main logical page in the application. It accepts a source and destination address and queries the database to retrieve any google maps urls corresponding to routes between the two. It then scrapes the page for the current traffic information, and finds the projected route time either with or without traffic, making sure to tell the user whether or not the projected time includes traffic. It the sorts the routes based on projected time to destination and sends them back to Angel in the form of a number of different variables, along with one describing how many routes are there. Additionally, if the user has only saved one route between destinations, it will retrieve the next few fastest routes from Google to try and still give them information about alternate possibilities.</p>
+<p><a href='9300.html'><code>planahead/9300_GetRouteInfo.py</code></a>: This is the main logical page in the application. It accepts a source and destination address and queries the database to retrieve any google maps urls corresponding to routes between the two. It then scrapes the page for the current traffic information, and finds the projected route time either with or without traffic, making sure to tell the user whether or not the projected time includes traffic. It the sorts the routes based on projected time to destination and sends them back to Angel in the form of a number of different variables, along with one describing how many routes are there. Additionally, if the user has only saved one route between destinations, it will retrieve the next few fastest routes from Google to try and still give them information about alternate possibilities.</p>
 </li>
 
 <li>
-<p><code>planahead/getUser.py</code>: This module is rather boring. We&#8217;re simulating a nosql database using a dictionary. This is a good example of stubbing, though, since we put this in an external module in comparison to all the modules that require user info. This means that conceivably,if we were to connect this to an actual database, the rest of our code would remain (largely) unchanged. Go Modular Design!</p>
+<p><a href='getuser.html'><code>planahead/getUser.py</code></a>: This module is rather boring. We&#8217;re simulating a nosql database using a dictionary. This is a good example of stubbing, though, since we put this in an external module in comparison to all the modules that require user info. This means that conceivably,if we were to connect this to an actual database, the rest of our code would remain (largely) unchanged. Go Modular Design!</p>
 </li>
 
 <li>
-<p><code>planahead/parseMap.py</code>: This module is an example of parsing xml to find pertinent information. In this case, the xml is actually the html of a google maps page. We use the lxml library to load it as a python object, and the html soup parser to fix any issues understanding the html and still retrieve acceptable, well structured xml.</p>
+<p><a href='parseMap.html'><code>planahead/parseMap.py</code></a>: This module is an example of parsing xml to find pertinent information. In this case, the xml is actually the html of a google maps page. We use the lxml library to load it as a python object, and the html soup parser to fix any issues understanding the html and still retrieve acceptable, well structured xml.</p>
 </li>
 </ul>
 

@@ -12,8 +12,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
   <title></title>
-  <meta name="description" content="{{ description }}">
-  <meta name="title" content="{{ page.title }}">
+  <meta name="description" content="">
+  <meta name="title" content="planahead/9300_GetRouteInfo.py">
   <meta name="author" content="Anthony Morelli">
 
   <!-- Mobile viewport optimized: j.mp/bplateviewport -->
@@ -33,7 +33,18 @@
 
   <div id="container">
 
-    {{ content }}
+    <h1>Example: planahead/9300_GetRouteInfo.py</h2>
+<h4>Created by <a href='https://github.com/nearlymonolith'>Anthony Morelli</a>. Questions? Email <a href='mailto:eid-questions@mit.edu'>eid-questions@mit.edu</a></h4>
+
+<p><a href="index.html#example_files">Back to examples</a></p>
+
+<p><code>planahead/9300_GetRouteInfo.py</code>: This is the main logical page in the application. It accepts a source and destination address and queries the database to retrieve any google maps urls corresponding to routes between the two. It then scrapes the page for the current traffic information, and finds the projected route time either with or without traffic, making sure to tell the user whether or not the projected time includes traffic. It the sorts the routes based on projected time to destination and sends them back to Angel in the form of a number of different variables, along with one describing how many routes are there. Additionally, if the user has only saved one route between destinations, it will retrieve the next few fastest routes from Google to try and still give them information about alternate possibilities.</p>
+
+
+
+
+
+
   
   </div> <!--! end of #container -->
 
