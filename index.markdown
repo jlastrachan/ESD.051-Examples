@@ -121,7 +121,7 @@ and present that to the user so they knew which route to take.
 [e4]: 9100.html
 [e5]: 9200.html
 [e6]: 9300.html
-[e7]: getuser.html
+[e7]: getUser.html
 [e8]: parseMap.html
 
 ### Helpful Python Libraries
